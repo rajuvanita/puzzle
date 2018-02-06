@@ -73,9 +73,10 @@ public class BalancedOrNot {
        // Scanner in = new Scanner(System.in);
 
 		//String expr = in.nextLine();
-    	String[] s = new String[]{"<>>>", "<>>>>"};
-		int[] in = new int[]{2,2};
-		int[] output =balancedOrNot(s,in); 
+    	//String[] s = new String[]{"<>>>", "<>>>>"};
+    	//String[] s = new String[]{"<>", "<>><"};
+		//int[] in = new int[]{2,2};
+		balancedOrNot(new String[]{"<>>>", "<>>>>"},new int[]{2,2}); 
         //in.close();
     }
 

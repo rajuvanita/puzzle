@@ -17,10 +17,10 @@ public class ConsecutiveSum {
 	// Driver code to test above function
 	public static void main(String[] args) {
 		//int N = 15;
-		Scanner in = new Scanner(System.in);
+//		Scanner in = new Scanner(System.in);
 
-		int N = in.nextInt();
-		System.out.println(countConsecutive(N));
-		in.close();
+//		int N = in.nextInt();
+		System.out.println(countConsecutive(10));
+//		in.close();
 	}
 }

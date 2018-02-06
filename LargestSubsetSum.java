@@ -19,12 +19,29 @@ public class LargestSubsetSum {
 	    }
 	    return r;
 	}
+	
+	static long[] maxSubsetSum(int[] k)
+	{
+	    int n = k.length;
+	    long[] r = new long[n];
+
+	    for(int i=0; i<n; ++i)
+	    {
+	       
+	    r[i] = maxSubsetSum(k[i]);
+	    }
+	    return r;
+	}
 
 	// Driver code to test above function
 	public static void main(String[] args) {
-		int n = 4;
+		//int n = 4;
 		
-		System.out.println(maxSubsetSum(n));
+		//System.out.println(maxSubsetSum(new int[]{2,4}));
 		//in.close();
+		long[] n = maxSubsetSum(new int[]{2,4});
+		for(int i=0;i<n.length;i++){
+			System.out.println(i);
+		}
 	}
 }
