@@ -69,15 +69,13 @@ public class BalancedOrNot {
 	  // Driver method
     public static void main(String[] args) 
     {
-
-       // Scanner in = new Scanner(System.in);
-
-		//String expr = in.nextLine();
-    	//String[] s = new String[]{"<>>>", "<>>>>"};
-    	//String[] s = new String[]{"<>", "<>><"};
-		//int[] in = new int[]{2,2};
-		balancedOrNot(new String[]{"<>>>", "<>>>>"},new int[]{2,2}); 
-        //in.close();
+    	String[] s=new String[2];//declaration and instantiation.
+		s[0]="<>";//initialization.
+		s[1]="<>><";
+		int b[]=new int[2];//declaration and instantiation.
+		b[0]=2;//initialization.
+		b[1]=2;
+		BalancedOrNot.balancedOrNot(s, b); 
     }
 
 }

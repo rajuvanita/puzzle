@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class TwoCircles {
@@ -67,17 +68,11 @@ public class TwoCircles {
 	}
 	
 	// Driver code to test above function
-	public static void main(String[] args) {
-//		String[] s = new String[5];
-//		s[0]="12 0 21 14 0 23";
-//		s[1]="0 45 8 0 94 9";
-//		s[2]="35 0 13 10 0 38";
-//		s[3]="0 26 8 0 9 25";
+	public static void main(String[] args) throws  IOException{
 		
-		String[] s = circles(new String[]{"0 5 9 0 9 7","0 15 11 0 20 16","26 0 10 39 0 23","37 0 5 30 0 11","41 0 0 28 0 13"});
-	//	System.out.println(circles(new String[]{"0 5 9 0 9 7","0 15 11 0 20 16","26 0 10 39 0 23  ","37 0 5 30 0 11","41 0 0 28 0 13"}));
+		String[] s = TwoCircles.circles(new String[]{"12 0 21 14 0 23","0 45 8 0 94 9","35 0 13 10 0 38","0 26 8 0 9 25"});
 		for(int i=0;i<s.length;i++){
-			System.out.println(i);
+			System.out.println(s[i]);
 		}
 		//in.close();
 	}

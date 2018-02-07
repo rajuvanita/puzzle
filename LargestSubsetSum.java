@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class LargestSubsetSum {
 	
-	static long maxSubsetSum(int k)
+	static long sum(int k)
 	{
 	    long r = 1+k;
 	    double sqrtK = Math.sqrt(k) + 1;
@@ -28,20 +28,19 @@ public class LargestSubsetSum {
 	    for(int i=0; i<n; ++i)
 	    {
 	       
-	    r[i] = maxSubsetSum(k[i]);
+	    r[i] = sum(k[i]);
+	   
 	    }
 	    return r;
 	}
 
+	
 	// Driver code to test above function
 	public static void main(String[] args) {
-		//int n = 4;
-		
-		//System.out.println(maxSubsetSum(new int[]{2,4}));
-		//in.close();
-		long[] n = maxSubsetSum(new int[]{2,4});
+		long[] n = LargestSubsetSum.maxSubsetSum(new int[]{2,4});
 		for(int i=0;i<n.length;i++){
-			System.out.println(i);
+			System.out.println(n[i]);
 		}
 	}
+
 }
